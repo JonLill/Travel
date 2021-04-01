@@ -7,7 +7,7 @@
     <title>Document</title>
     {% load static %}
 </head>
-<body>
+<body class="bg-warning">
     {% if messages %}
     <ul class="messages">    
         {% for message in messages %}    
@@ -47,6 +47,12 @@
                     <input type="submit" value="Update Trip" class="btn btn-seconday btn-lg btn-block"/>
                 </div>
         </form>
+    </div>
+    <br/>
+    <div class="align-items-center min-vh-100 d-flex justify-content-around">
+        <picture>
+            <img src="{% static 'images/guatape.jpg' %}" alt="pueblo" class="img-fluid img-thumbnail">
+        </picture>
     </div>
 </body>
 </html>
